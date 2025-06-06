@@ -74,19 +74,18 @@ def calculate_min_portfolio_line_data(min_weight: list, point_weight: list, cov_
     return [portfolio_data_sigma, portfolio_data_mu]
 
 #Main Function
-def main() -> list:
-    testER = [[0.08, 0.075, 0.09, 0.065, 0.1, 0.07, 0.085], [0.15, 0.12, 0.18, 0.10, 0.20, 0.11, 0.16]]
-    testCor = [[1, 0.8, 0.6, 0.3, 0.7, 0.5, 0.65],
-               [0.8, 1, 0.55, 0.4, 0.6, 0.45, 0.5],
-               [0.6, 0.55, 1, 0.35, 0.75, 0.5, 0.6],
-               [0.3, 0.4, 0.35, 1, 0.25, 0.3, 0.2],
-               [0.7, 0.6, 0.75, 0.25, 1, 0.55, 0.65],
-               [0.5, 0.45, 0.5, 0.3, 0.55, 1, 0.4],
-               [0.65, 0.5, 0.6, 0.2, 0.65, 0.4, 1]]
-
-    testCov = calculate_covariance_matrix(testCor, testER)
+def main(testCor: list, testEr: list) -> list:
+    # testER = [[0.08, 0.075, 0.09, 0.065, 0.1, 0.07, 0.085], [0.15, 0.12, 0.18, 0.10, 0.20, 0.11, 0.16]]
+    # testCor = [[1, 0.8, 0.6, 0.3, 0.7, 0.5, 0.65],
+    #            [0.8, 1, 0.55, 0.4, 0.6, 0.45, 0.5],
+    #            [0.6, 0.55, 1, 0.35, 0.75, 0.5, 0.6],
+    #            [0.3, 0.4, 0.35, 1, 0.25, 0.3, 0.2],
+    #            [0.7, 0.6, 0.75, 0.25, 1, 0.55, 0.65],
+    #            [0.5, 0.45, 0.5, 0.3, 0.55, 1, 0.4],
+    #            [0.65, 0.5, 0.6, 0.2, 0.65, 0.4, 1]]
+    testCov = calculate_covariance_matrix(testCor, testEr)
     testWV = calculate_weighted_vector(testCov)
-    testminportfolio = calculate_min_portfolio(testWV, testCov, testER[0])
+    testminportfolio = calculate_min_portfolio(testWV, testCov, testEr[0])
 
     return testminportfolio
 
