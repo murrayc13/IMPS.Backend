@@ -1,4 +1,3 @@
-import pandas as pd
 import numpy as np
 import math
 
@@ -72,31 +71,3 @@ def calculate_min_portfolio_line_data(min_weight: list, point_weight: list, cov_
         starting_bound += increment
 
     return [portfolio_data_sigma, portfolio_data_mu]
-
-def minimum_var_line(testCor, testER,user_expected_return):
-    testCov = calculate_covariance_matrix(testCor, testER)
-    testWV = calculate_weighted_vector(testCov)
-    testminportfolio = calculate_min_portfolio(testWV, testCov, testER[0])
-    testpoint = calculate_min_risk_point_data(testCov, testER[0], user_expected_return)
-    test_data = calculate_min_portfolio_line_data(testWV, testpoint[0], testCov, testER[0], alpha_range=13.6,
-                                                  increment=0.2)
-    return test_data
-
-#Main Function
-def main(testCor: list, testEr: list) -> list:
-    # testER = [[0.08, 0.075, 0.09, 0.065, 0.1, 0.07, 0.085], [0.15, 0.12, 0.18, 0.10, 0.20, 0.11, 0.16]]
-    # testCor = [[1, 0.8, 0.6, 0.3, 0.7, 0.5, 0.65],
-    #            [0.8, 1, 0.55, 0.4, 0.6, 0.45, 0.5],
-    #            [0.6, 0.55, 1, 0.35, 0.75, 0.5, 0.6],
-    #            [0.3, 0.4, 0.35, 1, 0.25, 0.3, 0.2],
-    #            [0.7, 0.6, 0.75, 0.25, 1, 0.55, 0.65],
-    #            [0.5, 0.45, 0.5, 0.3, 0.55, 1, 0.4],
-    #            [0.65, 0.5, 0.6, 0.2, 0.65, 0.4, 1]]
-    testCov = calculate_covariance_matrix(testCor, testEr)
-    testWV = calculate_weighted_vector(testCov)
-    testminportfolio = calculate_min_portfolio(testWV, testCov, testEr[0])
-
-    return testminportfolio
-
-if __name__ == "__main__":
-    main()

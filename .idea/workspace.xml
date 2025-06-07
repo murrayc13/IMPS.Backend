@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ee9f332-a49c-45f7-ad0e-bd550bd0df26" name="Changes" comment="adding first iteration of the post api">
+    <list default="true" id="6ee9f332-a49c-45f7-ad0e-bd550bd0df26" name="Changes" comment="adding new endpoints">
+      <change afterPath="$PROJECT_DIR$/domain/calculations/minimum_variance_cals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/services/minimum_varience_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/temp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/temp.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/endpoint_definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoint_definitions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/minvarinputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/minvarinputs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +47,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.endpoint_definitions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.minimum_variance.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Git/IPMS.Frontend&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.endpoint_definitions.executor": "Run",
+    "Python.minimum_variance.executor": "Run",
+    "Python.minimum_varience_service.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Git/IPMS.Frontend"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,12 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1749241292008</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding new endpoints">
+      <option name="closed" value="true" />
+      <created>1749305597049</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749305597049</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding information to the GitHub" />
     <MESSAGE value="adding first iteration of the post api" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding first iteration of the post api" />
+    <MESSAGE value="adding new endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding new endpoints" />
   </component>
 </project>
